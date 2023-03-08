@@ -1,5 +1,5 @@
 :root {
-    --navBar-bg-color:#8f8f8f;
+    --navBar-bg-color: #8f8f8f;
     --menu-hover-color: #dbdbdb;
     --menu-font-size: calc(20px + 0.2vh);
     --menu-border-color: #4d4d4d;
@@ -9,8 +9,9 @@
     box-sizing: border-box;
 }
 
-html,body {
-    height:100%;
+html,
+body {
+    height: 100%;
 }
 
 body {
@@ -29,11 +30,12 @@ header {
     background-color: var(--navBar-bg-color);
 }
 
-#topNav div.row1, #topNav div.row2 {
+#topNav div.row1,
+#topNav div.row2 {
     display: flex;
 }
 
-#topNav div.row2{
+#topNav div.row2 {
     background-color: rgb(213, 71, 213);
     flex-direction: row;
     font-size: var(--menu-font-size);
@@ -45,37 +47,48 @@ header {
     height: calc(20px + 0.6vh);
 }
 
-#topNav .menuIcon {
+#topNav .menuIcon,
+#topNav .searchSpan {
     padding: 10px 15px;
 }
 
-#topNav .menuIcon:hover {
+#topNav .menuIcon:hover,
+#topNav .searchSpan:hover {
     background-color: var(--menu-hover-color);
     transition: 0.3s;
 }
 
+#topNav .searchSpan {
+    display: none;
+    max-width: 400px;
+}
+
 #topNav #searchImg {
-    margin-left:auto;
+    margin-left: auto;
 }
 
 #topNav .menuItem {
     padding: calc(10px + 0.5vh);
     text-decoration: none;
-    color:black;
-    display:block;
+    color: black;
+    display: block;
 }
 
 #topNav .menuItem:hover {
     color: var(--menu-hover-color);
     transition: 0.3s;
     border-bottom: 5px var(--menu-border-color) inset;
-    padding-bottom:5px;
+    padding-bottom: 5px;
 }
 
-.sticky{
-    position:fixed;
-    top:0;
-    width:100%;
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#topNav #searchSpan2 {
+    display: hidden;
 }
 
 /* Smaller screens configurations: */
@@ -84,41 +97,54 @@ header {
 @media screen and (max-width: 600px) {
 
     header {
-        font-size:1.7vh;
-        padding:calc(0.4vh);
+        font-size: 1.7vh;
+        padding: calc(0.4vh);
     }
 
     #topNav {
-        font-size: calc( var(--menu-font-size) * 1.5vw );
+        font-size: calc(var(--menu-font-size) * 1.5vw);
     }
 
     #topNav div.row1 {
-        justify-content:space-between;
+        justify-content: space-between;
         background-color: var(--navBar-bg-color);
-    }
-    #topNav .navImg {
-        height:2.7vh;
+        overflow: hidden;
     }
 
-    /* #topNav #searchImg {
-        margin-left:0px;
-    } */
-    
+    #topNav .navImg {
+        height: 2.7vh;
+    }
+
+    #topNav #searchImg {
+        margin-left: auto;
+    }
+
+
+
+
+
     #topNav div.row2 {
         flex-direction: column;
-        align-items:unset;
-        justify-content:unset;
-        font-size:inherit;
+        align-items: unset;
+        justify-content: unset;
+        font-size: inherit;
     }
 
     #topNav .menuItem {
-        display:none;
+        display: none;
         border-bottom: 1px solid var(--menu-border-color);
-        font-size:inherit;
+        font-size: inherit;
     }
 
     #topNav .menuItem:hover {
         background-color: var(--menu-hover-color);
-        color:black;
+        color: black;
     }
+
+
+
+
+
+
+
 }

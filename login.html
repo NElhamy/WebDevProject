@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" type = "text/css" href = "CSS/topNav.css">
     <link rel = "stylesheet" type = "text/css" href = "CSS/loginStyle.css">
-
-    <script src = "JS/homepage.js"></script>
-    
     <title>Account</title>
 </head>
 
@@ -20,15 +17,26 @@
 
         <div id="topNav">
             <div class="row1">
-                <span class="menuIcon"><input class="navImg" type="image" src="Images/Icons/menu.png" onclick = "toggleMenu()"></span>
-                <span id="searchImg" class="menuIcon"><input class="navImg" type="image"
-                        src="Images/Icons/search.png"></span>
+                <span class="menuIcon"><input class="navImg" type="image" src="Images/Icons/menu.png"
+                        onclick="toggleMenu()">
+                </span>
+                <span class="menuIcon" id="closeSearch" style="display: none;" onclick="toggleSearchBar(false)">
+                    <img class="navImg" src="Images/Icons/close.png">
+                </span>
+                <span class="searchSpan">
+                    <input class="searchBox" type="search" placeholder="Search">
+                </span>
+                <span id="searchImg" class="menuIcon" onclick="toggleSearchBar(true)">
+                    <input class="navImg" type="image" src="Images/Icons/search.png">
+                </span>
+
                 <span class="menuIcon"><input class="navImg" type="image" src="Images/Icons/heart.png"></span>
                 <span class="menuIcon"><input class="navImg" type="image" src="Images/Icons/bag.png"></span>
-                <span class="menuIcon"><a id = "account" href ="login.html"><img class="navImg" src="Images/Icons/account.png"></a></span>
+                <span class="menuIcon"><a id="account" href="login.html"><img class="navImg"
+                            src="Images/Icons/account.png"></a></span>
             </div>
             <div class="row2">
-                <a class="menuItem" href="homepage.html">Home</a>
+                <a class="menuItem" href="#">Home</a>
                 <a class="menuItem" href="#">Men</a>
                 <a class="menuItem" href="#">Women</a>
                 <a class="menuItem" href="#">Kids</a>
@@ -54,4 +62,6 @@
     </div>
     
 </body>
+<script src = "JS/homepage.js"></script>
+
 </html>

@@ -1,3 +1,4 @@
+/*
 body {
     margin:0px;
 }
@@ -28,15 +29,16 @@ form input:not(.button) {
     width: 60%;
 }
 
+
 #login {
-    /* background-color: red; */
+     background-color: red; 
     width: 50%;
     float: left;
     margin: auto;
-}
+} 
 
 #register {
-    /* background-color: blue; */
+     background-color: blue; 
     margin: auto;
     width: 50%;
     float: left;
