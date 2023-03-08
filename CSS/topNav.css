@@ -64,7 +64,6 @@ header {
 
 #topNav .menuItem:hover {
     color: var(--menu-hover-color);
-    font-size: calc(var(--menu-font-size) + 0px);
     transition: 0.3s;
     border-bottom: 5px var(--menu-border-color) inset;
     padding-bottom:5px;
@@ -83,10 +82,6 @@ header {
         display:none;
         border-bottom: 1px solid var(--menu-border-color);
     }
-
-    /* div.row2 :nth-child(odd):not(#hovering) {
-        background-color:purple;
-    } */
 
     #topNav .menuItem:hover {
         background-color: var(--menu-hover-color);
