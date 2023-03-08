@@ -7,3 +7,17 @@ function toggleMenu() {
             x[i].style.display = "block";
     }
 }
+
+
+let topNav = document.getElementById("topNav");
+let sticky = topNav.offsetTop;
+
+window.onscroll = function () { makeSticky() };
+
+function makeSticky() {
+    if (window.pageYOffset >= sticky) {
+        topNav.classList.add("sticky")
+    } else {
+        topNav.classList.remove("sticky");
+    }
+}
