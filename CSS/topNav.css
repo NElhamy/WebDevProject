@@ -12,6 +12,7 @@
 html,
 body {
     height: 100%;
+    width:100%;
 }
 
 body {
@@ -28,6 +29,7 @@ header {
 
 #topNav {
     background-color: var(--navBar-bg-color);
+    z-index:1;
 }
 
 #topNav div.row1,
@@ -39,6 +41,7 @@ header {
     background-color: rgb(213, 71, 213);
     flex-direction: row;
     font-size: var(--menu-font-size);
+    text-decoration-style: solid;
     justify-content: center;
     align-items: center;
 }

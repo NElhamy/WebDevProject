@@ -1,53 +1,78 @@
-body{
+:root {
+  --font-size: 18px;
+  --social-bg-color:rgba(255, 255, 255, 0.6);
+}
+
+body {
   line-height: 1.5;
   font-family: 'Poppins', sans-serif;
 }
-*{
-  margin:0;
-  padding:0;
+
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-.container{
-  max-width: 1170px;
-  margin:auto;
+
+footer div {
+  margin-top:0px;
+  margin-bottom:5vh;
 }
-.row{
+
+footer div:nth-last-of-type(1), footer div:nth-last-of-type(2){
+  margin-bottom: -5px;
+}
+
+footer .container {
+  display:flex;
+  justify-content: space-evenly;
+  width:100%;
+}
+
+footer .row {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
 }
-ul{
+
+footer ul {
   list-style: none;
 }
-.footer{
-  background-color: #4d4d4d;
-    padding: 70px 0;
+
+.footer {
+  background-color:#4d4d4d;
+  padding: 70px 0;
 }
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
+
+.footer-col {
+  padding: 0 15px;
 }
-.footer-col h4{
-  font-size: 18px;
+
+.footer-col h4 {
+  font-size: var(--font-size);
   color: #000000;
   text-transform: capitalize;
   margin-bottom: 35px;
   font-weight: 500;
   position: relative;
 }
-.footer-col h4::before{
+
+.footer-col h4::before {
   content: '';
   position: absolute;
-  left:0;
+  left: 0;
   bottom: -10px;
   background-color: #727272;
   height: 2px;
   box-sizing: border-box;
   width: 50px;
 }
-.footer-col ul li:not(:last-child){
+
+.footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
-.footer-col ul li a{
+
+.footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
   color: #ffffff;
@@ -56,28 +81,32 @@ ul{
   color: #bbbbbb;
   display: block;
   transition: all 0.3s ease;
+  padding-right:15px;
 }
-.footer-col ul li a:hover{
+
+.footer-col ul li a:hover {
   color: #ffffff;
   padding-left: 8px;
 }
-.footer-col .social-links a{
+
+.footer-col .social-links a {
   display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: rgba(255, 255, 255, 0.6);
-  margin:0 10px 10px 0;
-  text-align: center;
+  background-color: var(--social-bg-color);
+  margin: 0 10px 10px 0;
   line-height: 55px;
+  justify-content: center;
   border-radius: 50%;
   color: #9b8181;
   transition: all 0.5s ease;
+  padding: 7px;
 }
-.footer-col .social-links a:hover{
-  color: #000000;
+
+.footer-col .social-links a:hover {
+  color: black;
   background-color: #ffffff;
 }
-.footer-col .social-links img{
-    height: 25px;
-    width:  25px;
-  }
+
+.footer-col .social-links img {
+  height: 25px;
+  width: 25px;
+}
