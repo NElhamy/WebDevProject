@@ -10,10 +10,24 @@
 </head>
 
 <body>
-    <h2>Log In</h2>
-    <form action="get">
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password    ">
-    </form>
+    <div>
+        <h1>Log In</h1>
+    </div>
+
+    <div id="form">
+        <form method="get">
+            <div id="login">
+                <div><h2 class="login-item">Log In</h2></div>
+                <div><input class="login-item" type="email" name="email" placeholder="Email"></div>
+                <div><input class="login-item" type="password" name="passowrd" placeholder="Password"></div>
+                <div><input class="login-item button" type="submit" name="sign-in" value="SIGN IN"></div>
+            </div>
+        </form>
+
+        <div id="register">
+            <div><h2 class="register-item">New Customer</h2></div>
+            <div><button class="register-item button" name="register">Register</button></div>
+        </div>
+    </div>
 </body>
 </html>
