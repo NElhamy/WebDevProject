@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+}
+
+input, .button {
+    padding: 5px;
+    margin-bottom: 5%;
+    border: none;
+}
+
+input:not(.button) {
+    border-bottom: 2px solid red;
+    width: 90%;
+    height: 30px;
+}
+
+.button {
+    width: 90%;
+}
+
+#form {
+    margin: auto;
+    width: 60%;
+}
+
+#login {
+    /* background-color: red; */
+    width: 50%;
+    float: left;
+    margin: auto;
+}
+
+#register {
+    /* background-color: blue; */
+    margin: auto;
+    width: 50%;
+    float: left;
+}
+
+.login-item, .register-item {
+    margin-left: 4%;
+}
