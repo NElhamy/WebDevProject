@@ -1,14 +1,19 @@
+body {
+    margin:0px;
+}
+
+
 h1 {
     text-align: center;
 }
 
-input, .button {
+form input, .button {
     padding: 5px;
     margin-bottom: 5%;
     border: none;
 }
 
-input:not(.button) {
+form input:not(.button) {
     border-bottom: 2px solid red;
     width: 90%;
     height: 30px;
