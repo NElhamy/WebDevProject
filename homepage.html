@@ -1,14 +1,44 @@
 <html>
-    <head>
-        <meta charset = "utf-8">
-        <title>Home</title>
-        <link rel = "stylesheet" type = "text/css" href = "CSS/style.css">
-    </head>
 
-    <body>
-        <a id="account" href="login.html"><img style="width: 20px;" src="Images\Icons\account.png" alt="account"></a>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="CSS/homepage.css">
+    <script src="JS/homepage.js"></script>
+</head>
 
-        <!-- need attribution (credits) for account icon in footer -->
+<body>
+    <div class="container">
+        <header>
+            <span>FREE SHIPPING FOR ORDERS ABOVE 500 EGP</span>
+        </header>
+
+        <div id="topNav">
+            <div class="row1">
+                <span class="menuIcon"><input class="navImg" type="image" src="Images/Icons/menu.png" onclick = "toggleMenu()"></span>
+                <span id="searchImg" class="menuIcon"><input class="navImg" type="image"
+                        src="Images/Icons/search.png"></span>
+                <span class="menuIcon"><input class="navImg" type="image" src="Images/Icons/heart.png"></span>
+                <span class="menuIcon"><input class="navImg" type="image" src="Images/Icons/bag.png"></span>
+                <span class="menuIcon"><a id = "account" href ="login.html"><img class="navImg" src="Images/Icons/account.png"></a></span>
+            </div>
+            <div class="row2">
+                <a class="menuItem" href="#">Home</a>
+                <a class="menuItem" href="#">Men</a>
+                <a class="menuItem" href="#">Women</a>
+                <a class="menuItem" href="#">Kids</a>
+                <a class="menuItem" href="#">Accessories</a>
+                <a class="menuItem" href="#">Shoes</a>
+                <a class="menuItem" href="#">Sale</a>
+            </div>
+
+        </div>
+    </div>
+     <!-- need attribution (credits) for account icon in footer -->
        <!-- <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a> -->
-    </body>
+       <!-- changed photo and got it from logomakr.com -->
+</body>
+
 </html>
