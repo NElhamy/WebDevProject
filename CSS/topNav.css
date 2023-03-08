@@ -1,7 +1,7 @@
 :root {
     --navBar-bg-color:#8f8f8f;
     --menu-hover-color: #dbdbdb;
-    --menu-font-size: 20px;
+    --menu-font-size: calc(20px + 0.2vh);
     --menu-border-color: #4d4d4d;
 }
 
@@ -39,7 +39,7 @@ header {
 }
 
 #topNav .navImg {
-    height:20px;
+    height: calc(20px + 0.6vh);
 }
 
 #topNav .menuIcon {
@@ -56,7 +56,7 @@ header {
 }
 
 #topNav .menuItem {
-    padding:10px;
+    padding: calc(10px + 0.5vh);
     text-decoration: none;
     color:black;
     display:block;
@@ -69,9 +69,27 @@ header {
     padding-bottom:5px;
 }
 
+/* Smaller screens configurations: */
+
 
 @media screen and (max-width: 600px) {
 
+    header {
+        font-size:1.7vh;
+        padding:calc(0.4vh);
+    }
+
+    #topNav div.row1 {
+        justify-content:space-between;
+    }
+    #topNav .navImg {
+        height:2.7vh;
+    }
+
+    /* #topNav #searchImg {
+        margin-left:0px;
+    } */
+    
     #topNav div.row2 {
         flex-direction: column;
         align-items:unset;
