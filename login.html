@@ -1,110 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" type = "text/css" href = "CSS/topNav.css">
-    <link rel = "stylesheet" type = "text/css" href = "CSS/loginStyle.css">
-    <link rel = "stylesheet" type = "text/css" href = "CSS/footer.css">
-    <title>Account</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account</title>
+  <link rel="stylesheet" type="text/css" href="CSS/topNav.css">
+  <link rel="stylesheet" type="text/css" href="CSS/footer.css">
+  <link rel="stylesheet" type="text/css" href="CSS/loginStyle.css">
+
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <span>FREE SHIPPING FOR ORDERS ABOVE 500 EGP</span>
-        </header>
+  <div class="container">
+    <div id="topNav">
+      <div class="row1">
+        <span class="menuIcon"><input class="navImg" type="image" src="Images/Icons/menu.png" onclick="toggleMenu()">
+        </span>
+        <span class="menuIcon" id="closeSearch" style="display: none;" onclick="toggleSearchBar(false)">
+          <img class="navImg" src="Images/Icons/close.png">
+        </span>
+        <span class="searchSpan">
+          <input class="searchBox" type="search" placeholder="Search">
+        </span>
+        <span id="searchImg" class="menuIcon" onclick="toggleSearchBar(true)">
+          <input class="navImg" type="image" src="Images/Icons/search.png">
+        </span>
 
-        <div id="topNav">
-            <div class="row1">
-                <span class="menuIcon"><input class="navImg" type="image" src="Images/Icons/menu.png"
-                        onclick="toggleMenu()">
-                </span>
-                <span class="menuIcon" id="closeSearch" style="display: none;" onclick="toggleSearchBar(false)">
-                    <img class="navImg" src="Images/Icons/close.png">
-                </span>
-                <span class="searchSpan">
-                    <input class="searchBox" type="search" placeholder="Search">
-                </span>
-                <span id="searchImg" class="menuIcon" onclick="toggleSearchBar(true)">
-                    <input class="navImg" type="image" src="Images/Icons/search.png">
-                </span>
-
-                <span class="menuIcon"><input class="navImg" type="image" src="Images/Icons/heart.png"></span>
-                <span class="menuIcon"><input class="navImg" type="image" src="Images/Icons/bag.png"></span>
-                <span class="menuIcon"><a id="account" href="login.html"><img class="navImg"
-                            src="Images/Icons/account.png"></a></span>
-            </div>
-            <div class="row2">
-                <a class="menuItem" href="homepage.html">Home</a>
-                <a class="menuItem" href="#">Men</a>
-                <a class="menuItem" href="#">Women</a>
-                <a class="menuItem" href="#">Kids</a>
-                <a class="menuItem" href="#">Accessories</a>
-                <a class="menuItem" href="#">Shoes</a>
-                <a class="menuItem" href="#">Sale</a>
-            </div>
-        </div>
-
-        <div id="login">
-            <div>
-                <h2>Log In</h2>
-            </div>
-            
-            <form action="get">
-                <div><input type="email" placeholder="Email"></div>
-                <div><input type="password" placeholder="Password"></div>
-                <div>
-                    <input type="submit" value="SIGN IN">
-                </div>
-            </form>
-        </div>
+        <span class="menuIcon"><input class="navImg" type="image" src="Images/Icons/heart.png"></span>
+        <span class="menuIcon"><input class="navImg" type="image" src="Images/Icons/bag.png"></span>
+        <span class="menuIcon"><a id="account" href="login.html"><img class="navImg"
+              src="Images/Icons/account.png"></a></span>
+      </div>
+      <div class="row2">
+        <a class="menuItem" href="homepage.html">Home</a>
+        <a class="menuItem" href="#">Men</a>
+        <a class="menuItem" href="#">Women</a>
+        <a class="menuItem" href="#">Kids</a>
+        <a class="menuItem" href="#">Accessories</a>
+        <a class="menuItem" href="#">Shoes</a>
+        <a class="menuItem" href="#">Sale</a>
+      </div>
     </div>
-    
+  </div>
+
+
+
+  <!-- need attribution (credits) for account icon in footer -->
+  <!-- <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a> -->
+  <!-- changed photo and got it from logomakr.com -->
+
+<div class = "bodyContainer">
+  <div id="login">
+    <div style>
+      <h2>Log In</h2>
+    </div>
+
+    <form action="get">
+      <div><input type="email" placeholder="Email"></div>
+      <div><input type="password" placeholder="Password"></div>
+      <div>
+        <input type="submit" value="SIGN IN">
+      </div>
+    </form>
+  </div>
+</div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Order status</a></li>
+            <li><a href="#">Payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Shoes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact us</h4>
+          <div class="social-links">
+            <a href="#"><img src="Images/Icons/Facebook.png"></a>
+            <a href="#"><img src="Images/Icons/Twitter.png"></a>
+            <a href="#"><img src="Images/Icons/Instagram.png"></a>
+            <a href="#"><img src="Images/Icons/phone.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
+<script src="JS/homepage.js"></script>
 
-<footer class="footer">
-    <div class="container">
-     <div class="row">
-       <div class="footer-col">
-         <h4>Menu</h4>
-         <ul>
-            <li><a href="#">Home</a></li>
-           <li><a href="#">about us</a></li>
-           <li><a href="#">our services</a></li>
-           <li><a href="#">privacy policy</a></li>
-         </ul>
-       </div>
-       <div class="footer-col">
-         <h4>get help</h4>
-         <ul>
-           <li><a href="#">FAQ</a></li>
-           <li><a href="#">order status</a></li>
-           <li><a href="#">payment options</a></li>
-         </ul>
-       </div>
-       <div class="footer-col">
-         <h4>online shop</h4>
-         <ul>
-           <li><a href="#">Men</a></li>
-           <li><a href="#">Women</a></li>
-           <li><a href="#">Kids</a></li>
-           <li><a href="#">Accessories</a></li>
-           <li><a href="#">Shoes</a></li>
-         </ul>
-       </div>
-       <div class="footer-col">
-         <h4>Contact us</h4>
-         <div class="social-links">
-           <a href="#"><img src="Images/Icons/Facebook.png"></a>
-           <a href="#"><img src="Images/Icons/Twitter.png"></a>
-           <a href="#"><img src="Images/Icons/Instagram.png"></a>
-           <a href="#"><img src="Images/Icons/phone.png" ></a>
-         </div>
-       </div>
-     </div>
-    </div>
- </footer>
- <script src = "JS/homepage.js"></script>
 </html>

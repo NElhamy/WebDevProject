@@ -1,11 +1,16 @@
-/*
+
 body {
     margin:0px;
 }
 
-
 h1 {
     text-align: center;
+}
+
+.bodyContainer {
+    display: flex;
+    flex-grow: 0px;
+    min-height:calc(300px + 1vh);
 }
 
 form input, .button {
@@ -31,10 +36,10 @@ form input:not(.button) {
 
 
 #login {
-     background-color: red; 
+     /* background-color: red;  */
     width: 50%;
     float: left;
-    margin: auto;
+    margin:auto;
 } 
 
 #register {
@@ -46,4 +51,6 @@ form input:not(.button) {
 
 .login-item, .register-item {
     margin-left: 4%;
-}
+} 
+
+

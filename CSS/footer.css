@@ -3,7 +3,11 @@
   --social-bg-color:rgba(255, 255, 255, 0.6);
 }
 
+html,
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   line-height: 1.5;
   font-family: 'Poppins', sans-serif;
 }
@@ -42,6 +46,7 @@ footer ul {
 .footer {
   background-color:#4d4d4d;
   padding: 70px 0;
+  bottom:0px;
 }
 
 .footer-col {
