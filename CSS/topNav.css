@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background-color: #4291ff;
+    background-color: #fbfcfd;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +38,7 @@ header {
 }
 
 #topNav div.row2 {
-    background-color: rgb(213, 71, 213);
+    background-color: rgb(255, 254, 255);
     flex-direction: row;
     font-size: var(--menu-font-size);
     text-decoration-style: solid;
