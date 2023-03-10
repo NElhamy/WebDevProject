@@ -120,7 +120,7 @@ header {
     padding: calc(10px + 0.5vh);
     text-decoration: none;
     color: black;
-    display: block;
+    display:none;
 }
 
 #topNav .menuItem:hover {
