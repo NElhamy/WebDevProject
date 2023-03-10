@@ -45,12 +45,47 @@ header {
     justify-content: center;
     align-items: center;
 }
-.boxx img{
-     padding: 10px;
-     margin: 15px;
-    align-items: center;
+.containerx {
+    position: relative;
+    width: 50%;
+    float: left;
+    padding: 10 px;
     
-}
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #4a5458;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .containerx:hover .overlay {
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 #topNav .navImg {
     height: calc(20px + 0.6vh);
 }
