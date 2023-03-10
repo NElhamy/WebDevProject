@@ -9,7 +9,20 @@
     <link rel="stylesheet" type="text/css" href="CSS/footer.css">
 
 </head>
-
+<script>
+    var myIndex=0;
+    function slider(){
+      var images=document.getElementsByClassName("mySlides");
+      for(var i=0;i<images.length;i++)
+      images[i].style.display="none";
+      if(myIndex>images.length-1)
+      myIndex=0;
+      images[myIndex].style.display="block";
+      myIndex++;
+      setTimeout(slider,2000);
+    }
+    setTimeout(slider,2000);
+  </script>
 <body>
     <div class="container">
         <header>
@@ -47,11 +60,17 @@
             </div>
         </div>
     </div>
-
+    <div>
+        <img class="mySlides" src="image.webp" style="width: 100%;">
+        <img class="mySlides" src="image1.webp"style="width: 100%;" >
+       
+      </div>
     <div class="bodyContainer">
-
-        <img src="Images/Icons/account.png" style="width : 300px">
-        <img src="Images/Icons/account.png" style="width : 300px">
+         
+        <div class="boxx">
+            <a href="#">  <img src="shoes.jpg" style="width : 500px " ></a>
+             <a href="#"> <img src="bag.jpg" style="width : 500px"></a>
+           </div>
         <img src="Images/Icons/account.png" style="width : 300px">
         <img src="Images/Icons/account.png" style="width : 300px">
         <img src="Images/Icons/account.png" style="width : 300px">
