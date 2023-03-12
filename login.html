@@ -50,21 +50,48 @@
   <!-- <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a> -->
   <!-- changed photo and got it from logomakr.com -->
 
-<div class = "bodyContainer">
-  <div id="login">
-    <div style>
-      <h2>Log In</h2>
+  <div class = "bodyContainer">
+    <div id="login">
+      <div>
+        <h2>Log In</h2>
+      </div>
+
+      <form method="get">
+        <!-- <div><input type="email" placeholder="Email"></div>
+        <div><input type="password" placeholder="Password"></div> -->
+
+        <div class="group">
+          <input required="" type="email" name="email" id="email" class="input">
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Email</label>
+        </div>
+
+        <div class="group">
+          <input required="" type="password" id="password" name="password" class="input">
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Password</label>
+        </div>
+
+        <div>
+          <input type="submit" value="SIGN IN">
+        </div>
+      </form>
     </div>
 
-    <form action="get">
-      <div><input type="email" placeholder="Email"></div>
-      <div><input type="password" placeholder="Password"></div>
+    <div id="register">
       <div>
-        <input type="submit" value="SIGN IN">
+        <h2>Register</h2>
       </div>
-    </form>
+
+      <form method="get">
+        <div>
+          <a href="register.html"><button>REGISTER</button></a> <!-- register page still not created -->
+        </div>
+      </form>
+    </div>
   </div>
-</div>
 
   <footer class="footer">
     <div class="container">

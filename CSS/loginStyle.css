@@ -11,19 +11,22 @@ h1 {
     display: flex;
     flex-grow: 0px;
     min-height:calc(300px + 1vh);
+    /* background-color: purple; */
+    justify-content:space-between;
 }
 
 form input, .button {
     padding: 5px;
-    margin-bottom: 5%;
+    /* margin-top: 10%;
+    margin-bottom: 10%; */
     border: none;
 }
 
-form input:not(.button) {
+/* form input:not(.button) {
     border-bottom: 2px solid red;
     width: 90%;
     height: 30px;
-}
+} */
 
 .button {
     width: 90%;
@@ -35,22 +38,159 @@ form input:not(.button) {
 }
 
 
-#login {
-     /* background-color: red;  */
-    width: 50%;
-    float: left;
-    margin:auto;
+#login, #register {
+    /* background-color: red;  */
+    width: 25%;;
 } 
 
-#register {
-     background-color: blue; 
-    margin: auto;
-    width: 50%;
-    float: left;
+#login {
+    margin-left: 25%;
 }
 
-.login-item, .register-item {
+#register {
+    /* background-color: blue;  */
+    margin-right: 25%;
+
+}
+
+/* .login-item, .register-item {
     margin-left: 4%;
-} 
+}  */
 
+h2 {
+    margin-top: 4%;
+    margin-bottom: 7%;
+}
 
+button {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   button:hover {
+    color: #e8e8e8;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+
+   .group {
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 10%;
+   }
+   
+   .input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    /* border-bottom: 1px solid #515151; */
+    background: transparent;
+   }
+   
+   .input:focus {
+    outline: none;
+   }
+   
+   label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .input:focus ~ label, .input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+   }
+   
+   .bar {
+    position: relative;
+    display: block;
+    width: 200px;
+   }
+   
+   .bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .bar:before {
+    left: 50%;
+   }
+   
+   .bar:after {
+    right: 50%;
+   }
+   
+   .input:focus ~ .bar:before, .input:focus ~ .bar:after {
+    width: 50%;
+   }
+   
+   .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+   }
+   
+   .input:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+   }
+   
+   @keyframes inputHighlighter {
+    from {
+     background: #5264AE;
+    }
+   
+    to {
+     width: 0;
+     background: transparent;
+    }
+   }
